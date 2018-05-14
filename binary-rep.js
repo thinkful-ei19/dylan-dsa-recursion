@@ -3,7 +3,7 @@ function binaryRep(num) {
   let remainder = num % 2;
   let newNum = num / 2;
   if (remainder) newNum = (num - 1) / 2;
-  return binaryRep(newNum) + `${remainder}`;
+  return `${binaryRep(newNum)}${remainder}`;
 }
 
 console.log(binaryRep(25));
